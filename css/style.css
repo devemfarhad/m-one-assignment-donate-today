@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.container-full {
+  width: 100%;
+}
+.container {
+  width: 1440px;
+  margin: 0px auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Inter;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  font-family: poppins;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+.fix {
+  overflow: hidden;
+}
+.round {
+  border: none;
+  border-radius: 10px;
+}
+.text-center {
+  text-align: center;
+}
+.black {
+  color: #000;
+}
+
+/* Hero section */
+
+#hero {
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/hero-bg.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  height: 800px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+}
+.hero-content {
+  width: 826px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-content h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+.hero-content p {
+  width: 691px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  z-index: 1;
+}
+.button-1 {
+  width: 160px;
+  padding: 16px 12px;
+  background: #ff5959;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  margin-top: 35px;
+  z-index: 1;
+}
+.button-2 {
+  padding: 16px 12px;
+  background: #ff5959;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  border: none;
+  margin-top: 35px;
+}
+
+/* Donate now section */
+
+#donate-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px 0;
+}
+#donate-now h2 {
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #121212;
+}
+#donate-now p {
+  width: 691px !important;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #707070;
+}
+#donate-now ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 50px;
+}
+#donate-now ul li {
+  display: block;
+  width: 135px;
+  height: 115px;
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 40px 15px;
+  margin: 0 20px;
+  text-align: center;
+}
+#donate-now ul li a {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #707070;
+}
+#donate-now ul li:hover {
+  border: 2px solid #ff5959;
+  background: #ffeeee;
+}
+.input-other {
+  margin-top: 50px;
+}
+.input-other form input[type="text"] {
+  width: 765px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  outline: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 28px;
+  color: #b3b3b3;
+}
+.input-other form input[type="submit"] {
+  margin: 20px auto;
+  display: block;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 16px 20px;
+}
+
+/* Donation plan */
+.donation-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.donation-plan h2 {
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #121212;
+}
+.donation-plan .text {
+  width: 691px !important;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #707070;
+}
+.row {
+  width: 1130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.row-2 {
+  width: 1130px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.col-plan {
+  width: 33.3333%;
+  padding: 20px;
+  margin: 1%;
+  overflow: hidden;
+}
+.col-1 {
+  background: rgba(79, 157, 166, 0.1);
+}
+.col-2 {
+  background: rgba(255, 89, 89, 0.1);
+}
+.col-3 {
+  background: #fff4d6;
+}
+
+/* Content section */
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.col-6 {
+  width: 50%;
+  padding: 20px;
+  margin: 1%;
+}
+#content h2 {
+  font-size: 45px;
+  line-height: 54px;
+  color: #121212;
+}
+#content p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #707070;
+}
+
+/* Gallery section */
+.row-3 {
+  width: 1130px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.col-4 {
+  width: 33.3333%;
+  padding: 20px;
+  overflow: hidden;
+}
+.col-4 img {
+  width: 450px;
+  height: 280px;
+}
+
+/* Before-footer */
+#Gallery,
+#before-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+#Gallery h2,
+#before-footer h2 {
+  font-size: 45px;
+  line-height: 54px;
+  text-align: center;
+  color: #121212;
+}
+
+#Gallery p,
+#before-footer p {
+  width: 691px !important;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #707070;
+}
+
+#before-footer .mail-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 809px;
+  min-height: 200px;
+  background: #fff4d6;
+  margin-top: 55px;
+}
+#before-footer .mail-us input[type="email"] {
+  width: 275px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #aa9f9f;
+  padding-left: 2%;
+  border: none;
+  outline: none;
+  background: #d9d9d9;
+  border-radius: 5px 0px 0px 5px;
+}
+#before-footer .mail-us input[type="submit"] {
+  width: 157px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  background: #ff5959;
+  border-radius: 0px 5px 5px 0px;
+}
+
+/* footer section */
+#footer {
+  min-height: 179px;
+  background: #0b0d17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
